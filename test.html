@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="banner.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body style="margin: 0px">
+    <div id="banner" style="width: 100%"></div>
+
+</body>
+<script>
+    banner('banner',{duration:3000,imgs:['./banner1.jpeg','./banner2.png','./banner3.jpeg'],
+        callback:function (index) {
+            console.log("current banner " , index )
+        }})
+</script>
+</html>
